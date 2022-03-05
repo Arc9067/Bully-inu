@@ -1,0 +1,908 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.btn a {
+    color: #000;
+}
+
+.contract{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(43, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contract>h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.contract>p{
+    color:white;
+    padding-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 20px;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(43, 39, 39);
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.nav-div{
+    height: 70px;
+    width: 60%;
+    /* background-color: green; */
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-div>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    line-height: 70px;
+    gap: 10px;
+}
+
+.nav-div>ul>li{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bolder;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+
+.nav-div>ul>li>a:hover{
+    color: skyblue;
+    letter-spacing: 1px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+    color: #fff;
+    background: brown;
+    box-shadow: 0 0 50px brown;
+}
+
+.ham{
+    display: none;
+}
+
+.home{
+    width: 100%;
+    background-color: black;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.home-main{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home-text{
+    height: 95%;
+    width: 48%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-self: center;
+}
+
+.home-text>h3:nth-child(1){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+}
+
+.home-text>h3:nth-child(2){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: brown;
+}
+
+
+.home-text>p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    color: #fff;
+}
+
+.home-button{
+    height: 70px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.home-button>button{
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: 1.7px solid brown;
+    background-color: transparent;
+    font-weight: bold;
+    color: brown;
+    /* transition: 9s; */
+}
+ 
+.con-btn{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    background-color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-button>button:hover{
+    color: #fff;
+    background: brown;
+    box-shadow: 0 0 50px brown;
+}
+
+.home-img{
+    height: 350px;
+    width: 48%;
+    /* background: linear-gradient(45deg, rgb(0 0 0 / 49%), #000000c4), url(./img/logo.png); */
+    /* background: linear-gradient(29deg, rgb(243 243 243 / 49%), #975454c4 ,rgb(243 243 243 / 49%)), url(./img/logo-2.png); */
+    background-image: url(./img/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    mix-blend-mode: hard-light;
+    border-radius: 20px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    transition: 1.5s;
+    animation-name: dogi;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dogi {
+    0%{
+        transform: rotate(-2deg);
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+    
+}
+
+/* Section for roadmap */
+
+.roadmap{
+    width: 100%;
+    /* background-color: #fff; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+
+.inner-roadmap{
+    width: 90%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.roadmap-roadmap{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 35px;
+}
+.roadmap-roadmap h3{
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.roadmap-phases{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.roadmap-cards{
+    height: 400px;
+    width: 30%;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px #546fd3;
+    transition: 1.5s;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.roadmap-cards:hover{
+    /* box-shadow: -4px -4px 4px gray; */
+    color: #fff;
+    background: brown;
+    box-shadow: 0 0 50px brown;
+}
+
+.roadmap-cards>h3{
+    font-size: 25px;
+    color: #fff;
+    font-family: 
+    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.roadmap-cards>ul{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width: 100%;
+    padding: 20px;
+    /* background-color: yellow; */
+}
+
+.roadmap-cards>ul>li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.more{
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;   
+    border-radius: 10px;
+    align-self: flex-end;
+    margin-bottom: 25px;
+}
+.more:hover{
+    color: #fff;
+    background: brown;
+    box-shadow: 0 0 50px brown;
+}
+
+.roadmap-cards:nth-child(5){
+    background-color: #000;
+    background-image: url(./img/logo.png);
+    background-position: center;
+    background-position: top;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+/* ////////////////////////////////////// */
+
+/* feature section start */
+
+
+.features{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-features{
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+
+.inner-features>h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 40px;
+    border-bottom: 2px solid #fff;
+
+}
+
+.main-feature{
+    width: 100%;
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+    /* background-color: red; */
+    justify-content: space-evenly;
+}
+
+.main-feature-card{
+    width:100%;
+    padding: 20px 10px;
+    background-color: white;
+    box-shadow: rgb(84 111 211) 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.main-feature-card:nth-child(2),
+.main-feature-card:nth-child(3){
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.div-img{
+    background-color: #546fd3;
+    width: 90%;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+}
+
+.div-img> img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.div-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.div-text>h3{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.div-text>p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 17px;
+    color: #383838;
+}
+
+
+.tokenomics{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.inner-tokenomics{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inner-tokenomics>h3{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    /* color: #fff; */
+    border-bottom: 2px solid #fff;
+}
+
+.tokenomics-div{
+    background-color: #000;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 18%;
+    gap: 30px;
+    padding: 50px;
+    overflow-x: hidden;
+}
+
+.tokenomics-cards{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    box-shadow: rgb(122, 125, 133) 0px 0px 20px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1.5s;
+}
+.tokenomics-cards:hover{
+    box-shadow: rgb(84 111 211) 0px 0px 40px;
+}
+
+.tokenomics-img{
+    /* height:60%; */
+    /* width: 100%; */
+    background: url(./img/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.tokenomics-text{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.tokenomics-text>h3{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.tokenomics-text>p{
+    width: 60%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14.5px;
+    text-align: center;
+}
+
+footer{
+    /* height: 400px; */
+    width: 100%;
+    background-color: black;
+    box-shadow: rgb(84 111 211) 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.inner-footer{
+    width: 70%;
+    background-color: #546fd3;
+    box-shadow: rgb(84 111 211) 0px 0px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+    bottom: 25px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 0;
+    margin-top: -20px;
+}
+
+.inner-footer .btn:hover{
+    color: #fff;
+    background: brown;
+    box-shadow: 0 0 30px #fff;
+}
+
+.inner-footer>h3{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    /* color: #fff; */
+    color: #000;
+}
+
+.footer-div{
+    /* height: 300px; */
+    width: 90%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link{
+    height: 100%;
+    width: 45%;
+    /* background-color: yellow; */
+}
+
+.link>h3{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.link>p{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* position: relative; */
+    top: 60px;
+    color: white;
+}
+.right{
+    color: #fff;
+    border-top: 1px solid #fff;
+    background-color: #2B2727;
+    text-align: center;
+    padding-block: 10px;
+}
+i{
+    color: #546fd3;
+    font-size: 35px;
+    box-shadow: rgb(122 125 133) 0px 0px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ///////////////////// */
+
+@media screen and (max-width:1024px){
+
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .contract{
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        background-color: brown;
+    }
+
+    .contract>h3{
+        text-align: left;
+        width: 100%;
+        font-size: 15px ;
+    }
+
+    .contract>p{
+        position: static;
+        font-size: 11px;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+
+    .nav{
+        justify-content: center;
+        height: auto;
+        position: fixed;
+        margin-left: -100%;
+        transition: .4s ease-in;
+        overflow: hidden;
+        top: 0;
+        background-color: rgb(0 0 0 / 95%);
+    }   
+
+    .display{
+        margin-left: 0;
+        box-shadow: 0px 0px 20px #546fd3;
+    }
+
+    .nav-div{
+        position: static;
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .nav-div>ul{
+        flex-direction: column;
+        /* background-color: red; */
+        line-height: 2;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-div>ul>li{
+        color: #fff;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-div>ul>li>button{
+        height: auto;
+        width: auto;
+        padding: 10px 20px;
+        margin: 10px 0;
+        background-color:white;
+        box-shadow:
+        0 0 2px black,
+        inset 2px 2px 2px black,
+        inset -2px -2px 2px white
+        ;
+    }
+
+
+    .ham{
+        display: flex;
+        flex-direction: column;
+        /* background-color: yellow; */
+        width: 40px;
+        height: 20px;
+        position: fixed;
+        right: 10px;
+        top: 20px;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .menu{
+        background-color: #fff;
+        height: 4px;
+        width: 70%;
+        transition: .4s ease-in-out;
+        position: absolute;
+    }   
+
+    .menu:first-child{
+        top: 0;
+        box-shadow: 0 8px 0 #fff;
+    }
+    .menu:last-child{
+        bottom: 0;
+    }
+
+    .close:first-child{
+        box-shadow: none;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .close:last-child{
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+
+    body{
+        transition: .4s ease-in-out;
+    }
+    .home{
+        height: auto;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .home-main{
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+    .home-text{
+        width: 100%;
+        text-align: center;
+    }
+    .home-text>h3:nth-child(1){
+        font-size: 20px;
+    
+    }
+    
+    .home-text>h3:nth-child(2){
+        font-size: 45px;
+        color: #e10000;
+    }
+    
+    
+    .home-text>p{
+        font-size: 16px;
+        line-height: 20px;
+        color: #727272;
+    }
+    .home-button{
+        width: 100%;
+        position: static;
+        margin-top: 0px;
+        top: 0px;
+    }
+    
+    .home-button>button{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .home-img{
+        height: 200px;
+        width: 100%;
+    }
+    .roadmap {
+        padding: 10px 0;
+    }
+    .roadmap-cards {
+        height: auto;
+        width: 400px;
+        aspect-ratio: 3 / 4;
+    }
+    .roadmap-cards>ul>li{
+        list-style-type: circle;
+    }
+    .main-feature{
+        grid-auto-columns: 90%;
+        overflow-x: scroll;
+        padding-bottom: 50px;
+        gap: 20px;
+        justify-content: start;
+        scroll-snap-type: inline mandatory;
+    }
+
+    .main-feature-card{
+        scroll-snap-align: start;
+        box-shadow: rgb(84 111 211) 0px 0px 18px;
+    }
+
+
+    .main-feature-card:nth-child(2),
+    .main-feature-card:nth-child(4){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-feature-card:nth-child(3){
+        margin: 0;
+    }
+
+    .tokenomics-div{
+        width: 90%;
+        grid-auto-columns: 80%;
+        overflow-x: scroll;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        scroll-snap-type: inline mandatory;
+    }
+
+    .tokenomics-cards{
+        scroll-margin-left: 20px;
+        scroll-snap-align: start;
+    }
+
+    .inner-footer{
+        width: 90%;
+        margin: 0;
+    }
+
+    .inner-footer>h3{
+        font-size: 20px;
+    }
+    .footer-div{
+        flex-direction: column-reverse;
+    }
+
+    .link{
+        width: 100%;
+    }
+    
+.inner-features>h3, .inner-tokenomics>h3, .roadmap-roadmap h3  {
+    font-size: 30px;
+}
+
+.link>h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+}
+
+
+@media (min-width:480px) and (max-width:1024px){
+    .main-feature,
+    .tokenomics-div{
+        grid-auto-columns: 35%;
+        scroll-snap-type: inline mandatory;
+    }
+
+    .main-feature-card,
+    .tokenomics-divs{
+        scroll-snap-align: start;
+    }
+
+    .tokenomics-div{
+        padding-left: 10px;
+        grid-auto-columns: 45%;
+        width: 90%;
+    }
+
+    .tokenomics-cards,
+    .main-feature-card{
+        box-shadow: rgb(84 111 211) 0px 0px 18px;
+    }
+
+    .main-feature::-webkit-scrollbar,
+    .tokenomics-div::-webkit-scrollbar {
+        height: 8px;
+    }
+    .main-feature::-webkit-scrollbar-track,
+    .tokenomics-div::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+    .main-feature::-webkit-scrollbar-thumb,
+    .tokenomics-div::-webkit-scrollbar-thumb
+     {
+        background: rgb(84 111 211);
+        border-radius: 10px;
+    }
+    
+    .main-feature::-webkit-scrollbar-thumb:hover,
+    .tokenomics-div::-webkit-scrollbar-thumb:hover{
+        box-shadow: rgb(84 111 211) 0px 0px 10px;
+    }
+}
+
+   
